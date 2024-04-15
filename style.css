@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<link href="https://fonts.googleapis.com/css?family=Lobster|Indie+Flower" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #E5E5E5 url("bg.jpg") no-repeat center center;
+    }
+
+    #card, #card-front, #card-inside {
+        height: 580px;
+    }
+
+    #card {
+        width: 960px;
+        margin: auto;
+        transform-style: preserve-3d;
+        perspective: 5000px;
+        transform: translateX(-25%);
+        transition: transform 1s ease-in-out;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    #card-front, #card-inside {
+        width: 50%;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 50%;
+    }
+
+    #card-front {
+        background: linear-gradient(to bottom, #FF5555 0%, #FF7777 100%);
+        color: #FFDFDF;
+        transform-origin: left;
+        transform-style: preserve-3d;
+        perspective: 5000px;
+    }
+
+    #card-inside .wrap {
+        background: #FFEFEF;
+        box-shadow: inset 2px 0 1px rgba(0, 0, 0, 0.05);
+    }
+
+    #card h1 {
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        font-style: italic;
+        font-size: 70px;
+        text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15), 1px 1px 0 #ffc8c8, 2px 2px 0 #ff9696, 3px 3px 0 #ff7d7d;
+        color: #FFF;
+    }
+
+    #card-inside {
+        font-size: 1.3em;
+        line-height: 1.4;
+        font-family: 'Lobster', cursive;
+        color: #331717;
+        font-style: italic;
+    }
+
+    p.signed {
+        text-align: center;
+        font-family: 'Indie Flower', cursive;
+        font-weight: bold;
+        font-size: 0.75em;
+    }
+
+    #card-front button {
+        position: absolute;
+        bottom: 1em;
+        right: -12px;
+        background: #F44;
+        color: #FFF;
+        font-family: 'Lobster', cursive;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.5em;
+        padding: .5em;
+        border: none;
+        cursor: pointer;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.4);
+    }
+
+    #card-front button:hover,
+    #card-front button:focus {
+        background: #F22;
+    }
+
+    footer {
+        max-width: 500px;
+        margin: 40px auto;
+        font-family: 'Lobster', cursive;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #888;
+        text-align: center;
+    }
+
+    .cake_and_velas {
+        position:absolute;
+        bottom: 25%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    /* Fire animation */
+    .fuego {
+        border-radius: 100%;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        margin-left: -2.6px;
+        width: 6.66666667px;
+        height: 18px;
+    }
+
+    /* Keyframe definitions not shown here for brevity, include them as needed */
+</style>
+</head>
+<body>
+
+</body>
+</html>
